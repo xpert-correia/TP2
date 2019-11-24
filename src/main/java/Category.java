@@ -1,32 +1,38 @@
 public class Category {
 
-    private String nome;
+    private String name;
     private String description;
     private String color;
 
-
-
-    public String getNome() {
-        return nome;
+    public Category(String name, String description, String color){
+        this.name= name;
+        this.description=description;
+        this.color=color;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public String getName() {
+        return name;
     }
 
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public String getColor() {
         return color;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public void setColor(String color) {
         this.color = color;
     }
+
 }
+
