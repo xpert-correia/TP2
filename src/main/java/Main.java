@@ -1,5 +1,9 @@
 
+
+
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -27,29 +31,72 @@ public class Main {
             User user1 = new User("Paulo","paulo@outlook.com","Paulo724","123",address1);
             User user2 = new User("Daniel","daniel@outlook.pt","Daniel132","123",address2);
 
-            //ShoppingList lista1 = new ShoppingList("Lista1",user1,user2,"lista1","lista2",user1);
-            //ShoppingList lista2 = new ShoppingList("Lista2",user1)
+
+           // List<User> users = new ShoppingList;
+            List<User> userList = new ArrayList<>();
+            userList.add(user1);
+            userList.add(user2);
+            List<Product> Product = new ArrayList<>();
+
+
+            //ShoppingList Lista2 = new ShoppingList("Lista2",user1,user2);
+           // List<Product> ProductList = new ShoppingList("Lista1","user1","ProductList1","");
+            //ShoppingList ProductList1 = new ShoppingList("ProductList1",user1,"Lista1")
+
+            ArrayList<Product> ProductList1 = new ArrayList<>();
+
+            ProductList1.add(product1);
+            ProductList1.add(product2);
+            ProductList1.add(product3);
+            ProductList1.add(product4);
+            ProductList1.add(product5);
+            ProductList1.add(product6);
+            ProductList1.add(product7);
 
 
 
-            List<Product> ProductList = new ArrayList<>();
+            ArrayList<Product> ProductList2 = new ArrayList<>();
+
+            ProductList2.add(product4);
+            ProductList2.add(product3);
+
+            //ShoppingList s = new ShoppingList("kks",user1,new List<User>(), ProductList1, ProductList2);
+            //ShoppingList n = new ShoppingList("Paulo",user1, userList, ProductList1, ProductList2);
+            //s.getTotalOfProducts();
+            ShoppingList n = new ShoppingList("Compras",user1,ProductList1,ProductList2,userList);
+               // n.getTotalOfProducts();
+                //n.GetTotalPrice();
+
+            for(int i=1;i<2;i++)
+            {
+                    System.out.println("Nomes: " + userList.get(i).getName());
+            }
 
 
-            ProductList.add(product1);
-            ProductList.add(product2);
-            ProductList.add(product3);
-            ProductList.add(product4);
-            ProductList.add(product5);
-            ProductList.add(product6);
-            ProductList.add(product7);
-            lista1.setProductlist1(ProductList);
 
-            List<Product> ProductList2 = new ArrayList<>();
-            ProductList.add(product1);
-            ProductList.add(product2);
-            lista2.setProductlist2(ProductList2);
+                System.out.println(userList.get(0).getName());
+            //System.out.println(n.GetTotalPrice());
+            System.out.println("numero de produtos: "+n.getTotalOfProducts());
+           //System.out.println(n.GetTotalPriceOnCart());
+            System.out.println("Numero de Produtos: "+ n.getTotalOfProductsOnShoppingCart() +" valor total:"+n.GetTotalPriceOnCart() + " carrinho" + n.GetPercentageCompleted() + "%");
+            //System.out.println(n.GetPercentageCompleted());
 
-            System.out.println(lista1.getListname()+"\n"+ lista1);
-            System.out.println("Hello World");
+
+          //  System.out.println(sum);
+
+
+
+
+
+
+            //Sho.setProductlist1(ProductList1);
+
+           // List<Product> ProductList2 = new ArrayList<>();
+           // ProductList.add(product1);
+            //ProductList.add(product2);
+            //lista2.setProductlist2(ProductList2);
+
+            //System.out.println(lista1.getListname()+"\n"+ lista1);
+            //System.out.println("Hello World");
     }
 }
