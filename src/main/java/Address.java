@@ -1,6 +1,6 @@
 public class Address {
-    private String streetname;
-    private String doorno;
+    public String streetname;
+    public String doorno;
     private String postalcode;
 
 
