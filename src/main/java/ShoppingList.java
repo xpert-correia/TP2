@@ -57,10 +57,10 @@ public class ShoppingList {
 
     public double GetPercentageCompleted(){
         double percent = 0;
-        int sizeList = ProductList1.size(); // tamanho da lista de produtos para comprar
-        int sizeCarrinhoList = ProductList2.size();// tamanho lista carrinho de compras
-        percent= (sizeCarrinhoList*100)/sizeList;// percentagem de produtos no carrinho de compras
-        return percent; //retornar percentagem
+        int sizeList = ProductList1.size(); // tamanho da lista
+        int sizeCarrinhoList = ProductList2.size();// tamanho lista carrinho
+        percent= (sizeCarrinhoList*100)/sizeList;// percentagem de produtos no carrinho
+        return percent; //percentagem
     }
     public double GetTotalPrice(){
         double totalprice = 0;
