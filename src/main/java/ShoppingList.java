@@ -19,15 +19,24 @@ public class ShoppingList {
         Productlist2 = Productlist2;
     }
 
+
+
+
     public ShoppingList(String name, User user, List<Product> productlist1, List<Product> productlist2, List<User> userList){
         this.name = name;
         this.user = user;
 
         ProductList1 = productlist1;
         ProductList2 = productlist2;
+
+
         UserList = userList;
 
     }
+
+
+
+
 
     public String getListname(){
         return  name;
